@@ -55,8 +55,8 @@ class pascal_voc(imdb):
         self._image_ext = '.jpg'
         self._image_index = self._load_image_set_index()
         # Default to roidb handler
-        # self._roidb_handler = self.selective_search_roidb
-        self._roidb_handler = self.gt_roidb
+        self._roidb_handler = self.selective_search_roidb
+        # self._roidb_handler = self.gt_roidb
         self._salt = str(uuid.uuid4())
         self._comp_id = 'comp4'
 
